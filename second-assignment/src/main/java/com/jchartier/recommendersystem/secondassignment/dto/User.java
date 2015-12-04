@@ -1,16 +1,25 @@
 package com.jchartier.recommendersystem.secondassignment.dto;
 
-import java.util.List;
+import java.util.Map;
 
 public class User {
 
-    private List<Document> documents;
+    private String name;
+    private Map<String, Document> documents;
 
-    public List<Document> getDocuments() {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public Map<String, Document> getDocuments() {
         return documents;
     }
 
-    public void setDocuments(List<Document> documents) {
+    public void setDocuments(Map<String, Document> documents) {
         this.documents = documents;
     }
 }
